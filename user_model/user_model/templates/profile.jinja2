@@ -1,0 +1,25 @@
+"""Show each user's profile page."""
+
+{% extends "layout.jinja2" %}
+    {% block body %}
+        <main>
+            <h3>Here is your profile.</h3>
+            <article>
+                <h2>Name: </h2>
+                <br>
+                <p>{{ user.first_name }} {{ user.last_name }}</p>
+                <br>
+                <br>
+                <h2>Username: </h2>
+                <br>
+                <p>{{ user.username }}</p>
+                <br>
+                <br>
+                <h2>Favorite Food: </h2>
+                <br>
+                <p>{{ user.favorite_food }}</p>
+                <br>
+                <br>
+            </article>
+        </main>
+    {% endblock %}
